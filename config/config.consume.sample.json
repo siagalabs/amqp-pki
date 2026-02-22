@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 5671,
+  "vhost": "/",
+  "queue": "example-queue",
+  "ca": "certs/amqp-client.chain.pem",
+  "cert": "certs/amqp-client.cert.pem",
+  "key": "certs/amqp-client.key.pem",
+  "verify": true,
+  "decrypt": true,
+  "senderCert": "certs/amqp-client.cert.pem",
+  "decryptKey": "certs/amqp-client.key.pem"
+}

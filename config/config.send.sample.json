@@ -1,0 +1,15 @@
+{
+  "host": "localhost",
+  "port": 5671,
+  "vhost": "/",
+  "queue": "example-queue",
+  "ca": "certs/amqp-client.chain.pem",
+  "cert": "certs/amqp-client.cert.pem",
+  "key": "certs/amqp-client.key.pem",
+  "sign": true,
+  "encrypt": true,
+  "signingKey": "certs/amqp-client.key.pem",
+  "signAlgorithm": "SHA256",
+  "recipientCert": "certs/amqp-client.cert.pem",
+  "payload": "Hello from mTLS AMQP client!"
+}
