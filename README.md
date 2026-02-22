@@ -1,4 +1,4 @@
-# sipg-task-6
+# amqp-pki
 
 AMQP 1.0 client scripts for RabbitMQ using **mTLS** authentication (EXTERNAL SASL) with the [rhea](https://github.com/amqp/rhea) library.
 
