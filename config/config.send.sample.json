@@ -3,7 +3,7 @@
   "port": 5671,
   "vhost": "/",
   "queue": "example-queue",
-  "ca": "certs/amqp-client.chain.pem",
+  "ca": "certs/ServerCA-chain.pem",
   "cert": "certs/amqp-client.cert.pem",
   "key": "certs/amqp-client.key.pem",
   "sign": true,

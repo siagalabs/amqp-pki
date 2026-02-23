@@ -31,6 +31,18 @@ certs/
 
 ### `send.js` — Unified Sender (recommended)
 
+**BEGIN TODO LIST**
+1. Certificate Validation for Signing/Encryption
+> Validate it (expiry, trust chain) before use. This prevents using expired or untrusted certificates.
+
+2. Optional Message Properties
+> Allow setting custom AMQP message/application properties via CLI or config (to use APAC headers)
+
+3. Certificate Validation for Recipient
+> When encrypting, validate the recipient's certificate (expiry, trust chain) before use.
+
+**END TODO LIST**
+
 Sends a message with optional signing and/or encryption via CLI switches.
 
 ```bash
@@ -87,6 +99,18 @@ node send.js --config config.send.sample.json --count 1000
 ### `consume.js` — Unified Consumer (recommended)
 
 Consumes messages with optional signature verification and/or decryption.
+
+**BEGIN TODO LIST**
+
+1. Certificate Validation.
+> Validate the sender's certificate (expiry, trust chain, revocation) before using it for signature verification.
+
+> Validate our own certificate and key for decryption.
+
+2. Peformance Metrics
+> Add more detailed stats (e.g. per-second throughput, error rates, etc.)
+
+**END TODO LIST**
 
 ```bash
 # Plain consumer
